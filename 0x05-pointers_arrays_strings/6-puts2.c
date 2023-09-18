@@ -11,6 +11,7 @@ void puts2(char *str)
 
 	while (str[i] != '\0')
 	{
+		printf("%c\n");
 		_putchar(str[i]);
 		i += 2;
 	}
