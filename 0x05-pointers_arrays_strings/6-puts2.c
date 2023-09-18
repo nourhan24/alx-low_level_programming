@@ -5,11 +5,26 @@
  * @str: input
  * Return: print
  */
-void puts2(char *s)
+void puts2(char *str)
 {
-	for (int i = 0; s[i] != '\0'; i += 2)
+	int sll = 0;
+	int t = 0;
+	char *y = str;
+	int o;
+
+	while (*y != '\0')
 	{
-	_putchar(s[i]);
+		y++;
+		sll++;
+	}
+	t = sll - 1;
+	for (o = 0 ; o <= t ; o++)
+	{
+		if (o % 2 == 0)
+	{
+		_putchar(str[o]);
+	}
 	}
 	_putchar('\n');
 }
+
