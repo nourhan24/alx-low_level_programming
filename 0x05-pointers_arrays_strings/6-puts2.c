@@ -5,15 +5,11 @@
  * @str: input
  * Return: print
  */
-void puts2(char *str)
+void puts2(char *s)
 {
-	int i = 0;
-
-	while (str[i] != '\0')
+	for (int i = 0; s[i] != '\0'; i += 2)
 	{
-		printf("%c\n");
-		_putchar(str[i]);
-		i += 2;
+	_putchar(s[i]);
 	}
 	_putchar('\n');
 }
